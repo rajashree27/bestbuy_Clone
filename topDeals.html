@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Deals</title>
     <link rel="stylesheet" href="./topDeals.css">
+    <!-- Jquery script for including navbar to all pages -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#navbar').load('navbar.html')
+        });
+    </script>
+    <script>
+        $(function(){
+            $('#footer').load('bottompage.html')
+        });
+    </script>
 </head>
 <body>
+    <div id="navbar"></div>
 <!-- 1. Everything inside that container -->
     <div class="container">
 
@@ -355,6 +368,7 @@
 
 
     </div>
+    <div id="footer"></div>
     
 </body>
 </html>
