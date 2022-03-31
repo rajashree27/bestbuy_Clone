@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        
+        #top{
+           display: flex;
+            width: 100%;
+            height: 700px;
+           
+           justify-content: space-evenly;
+        }
+      
+        #top1{
+            width: 48%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+           
+        }
+        #top2{
+            width: 48%;
+            height: 100%;
+  
+
+          }
+        #pick{
+            display: flex;
+            width: 100%;
+            height: 55%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #Deal{
+            width: 100%;
+            height: 40%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin-top: 30px;
+         
+        }
+        #outlet{
+            display: flex;
+            height: 40px;
+            width: 200px;
+            
+            margin-left: 50px;
+            margin-top: 50px;
+            background-color: blue;
+        
+
+        }
+        #outlet1{
+           
+            height: 100%;
+            width: 50%;
+        
+          
+            
+
+        }
+        #outlet2{
+            height: 100%;
+            width: 50%;
+         
+
+        }
+        #outlet1 >p{
+            font-size: 35px;
+            color: yellow;
+            margin-top: 2px;
+            font-weight: bolder;
+            margin-left: 2px;
+        
+        }
+        #outlet2 >p{
+            font-size: 35px;
+            color: white;
+            margin-top: 2px;
+            font-weight: bolder;
+            margin-left: 4px;
+        }
+        #save{
+          font-size: 60px;
+          color: red;
+          margin-top: 20px;
+          margin-left: 50px;
+          font-weight: bold;
+        }
+        #per{
+            display: flex;
+            
+            
+        }
+        #per >p{
+            font-size: 300px;
+            color: black;
+            margin-top: -100px;
+            margin-left: 40px;
+            font-weight: bold;
+        }
+        #per>p+p{
+            color: red;
+           font-weight: bold;
+           margin-left: 10px;
+        }
+        #on{
+            font-size: 50px;
+            margin-top: -350px;
+            margin-left: 50px;
+        }
+        #end{
+            margin-left: 50px;
+            margin-top: -10px;
+        }
+        #shop{
+            width: 130px;
+            height: 40px;
+            background-color: blue;
+            border-radius: 5px;
+            color: white;
+            margin-left: 200px;
+            margin-top: -10px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border: none;
+        }
+        #shop:hover{
+            background-color: #0046BE;
+            cursor: pointer;
+        }
+        
+       
+      
+      #deal1{
+          display: flex;
+          height: 50px;
+          width: 100%;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        
+          justify-content: space-between;
+
+      }
+      #deal1>p+p{
+          color: blue;
+      }
+      #deal1>p+p:hover{
+          text-decoration: underline;
+          cursor: pointer;
+      }
+      #dealday{
+          font-size: 15px;
+      }
+      #deal2{
+          display: flex;
+          height: 200px;
+          width: 100%;
+          
+          margin-top: 20px;
+
+      }
+      #deal2>img{
+          height: 50%;
+          width: 20%;
+          margin-top: 30px;
+          margin-left: 30px;
+      }
+      #deal3{
+          display: grid;
+          grid-template-columns: none;
+          grid-template-rows: repeat(3,1fr);
+      }
+      #vivo{
+          color: blue;
+          margin-left: 30px;
+          margin-top: 40px;
+      }
+      #vivo:hover{
+         
+text-decoration: underline;
+color: rgb(56, 55, 55);
+cursor: pointer;
+      }
+      #vivo1{
+          color: black;
+          font-weight: bold;
+          margin-top: -10px;
+          margin-left: 40px;
+      }
+      #vivo2{
+          color: black;
+          text-decoration: line-through;
+          margin-top: -40px;
+          margin-left: 40px;
+      }
+      #middle{
+        display: grid;
+            width: 100%;
+            height: 600px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+           margin-top: 40px;
+          
+          
+        }
+          
+      #tabs{
+          color:rgb(27, 11, 11);
+          font-size: 25px;
+          font-weight: bold;
+          text-decoration: underline;
+          margin-left: 30px;
+          margin-top: 24px;
+      }
+     
+      #tabs1{
+          font: 15px;
+          color: blue;
+        margin-left: 50px;
+        margin-top: -160px;
+      
+      font-weight: bold;
+         
+         text-decoration: underline;
+      
+         cursor: pointer;
+     }
+     #tabs1:hover{
+         color: rgb(27, 11, 11);;
+         cursor: pointer;
+     }
+     #tabcontent{
+         height: 300px;
+         width: 250px;
+         border: 0.5px solid #c5cbd5;
+         border-radius: 5px;
+         margin-left: 70px;
+      
+         
+     }
+     #underline{
+         border: none;
+         height: 1px;
+         background-color: red;
+     }
+     #tabcontainer{
+         display: flex;
+         margin-top: -200px;
+     }
+     #tabcontent1{
+         height: 300px;
+         width: 250px;
+         border: 0.5px solid #c5cbd5;
+         border-radius: 5px;
+         margin-left: 35px;
+      
+         
+     }#tabcontent2{
+         height: 300px;
+         width: 250px;
+         border: 0.5px solid #c5cbd5;
+         border-radius: 5px;
+         margin-left: 35px;
+      
+         
+     }
+     #tabimg{
+         height: 150px;
+         width: 85%;
+         display: flex;
+padding: 55px 20px;
+     }
+     #tabstyle{
+         color: blue;
+         text-decoration: underline;
+         margin-top: -30px;
+         margin-left: 10px;
+      
+     }
+     #tabstyle:hover{
+          color:rgb(27, 11, 11);
+          cursor: pointer;
+     }
+     #gridtemplate{
+        display: flex;
+         height: 90px;
+         width: 100%;
+ 
+    
+        margin-bottom: -30px;
+        justify-content: space-between;
+        
+        
+     }
+         
+     
+     #grid{
+        display: grid;
+         height: 90px;
+         width: 47%;
+ 
+        border: 1px solid #c5cbd5;
+        margin-bottom: -50px;
+background-color: #f0f2f4;
+justify-content: center;
+
+        align-items: center;
+        
+
+        
+     }
+    
+     #grid1{
+        display: grid;
+         height: 90px;
+         width: 47%;
+ 
+        border: 1px solid #c5cbd5;;
+        margin-bottom: -50px;
+        background-color: #f0f2f4;
+       
+     }
+    #grid>img{
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+    #gridtemplate1{
+      
+        margin-top: -55px;
+        font-size: 23px;
+        font-weight: bold;
+        margin-left: 50px;
+
+      }
+      #gridtemplate2{
+    font-size:15px;
+    color: blue;
+    
+    margin-top: -25px;
+    
+    margin-left: 50px;
+    font-weight: bold;
+
+      }
+      #gridtemplate2:hover{
+          text-decoration: underline;
+           color:rgb(27, 11, 11);;
+      }
+      #grid1A{
+
+        margin-top: -60px;
+        font-size: 23px;
+        font-weight: bold;
+        margin-left: 220px;
+
+      }
+      #grid1B{
+        font-size:15px;
+    color: blue;
+    
+    margin-top: -30px;
+    
+    margin-left: 220px;
+    font-weight: bold;
+      }
+      #grid1B:hover{
+          text-decoration: underline;
+           color:rgb(27, 11, 11);;
+      }
+      #grid1 >img{
+          height: 80px;
+        margin-left: 120px;
+        margin-top: 5px;
+       
+      }
+      #big-screen-container{
+          display: flex;
+          height: 530px;
+          width: 100%;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          margin-top: 30px;
+          justify-content: space-evenly;
+         
+      }
+      #bigscreen{
+height: 500px;
+width: 47%;
+
+/* background-image: url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-530171-tv-d5b7887e-39f8-42d3-93cb-781647b27e38.jpg"); */
+
+      }
+      #macbook{
+        height: 500px;
+width: 47%;
+
+      }
+      #bag1{
+          display: grid;
+       
+      }
+      #big1{
+          font-size: 30px;
+          font-weight: bold;
+          margin-left: 30px;
+        margin-top: -480px;
+      }
+      #big2{
+          font-size: 20px;
+          font-weight: lighter;
+          margin-top: -15px;
+          margin-left: 30px;
+      }
+      #shopnow{
+         
+          border-radius: 5px;
+          background-color: blue;
+          color:white;
+          padding: 8px 25px;
+          font-weight: bolder;
+        margin-left: 30px;
+        border: none;
+          }
+          #shopnow:hover{
+              background-color: #0046BE;
+              cursor: pointer;
+          }
+      #bigscreen>img{
+          height: 100%;
+          width: 100%;
+      }
+      #macbook>img{
+        height: 100%;
+          width: 100%;
+      }
+      #macbook1{
+        margin-top: -410px;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-left: 190px;
+      }
+      #macbook2{
+          font-size: 15px;
+          margin-left: 250px;
+          margin-top: -12px;
+      }
+      #macbtn{
+           
+        border-radius: 5px;
+          background-color: blue;
+          color:white;
+          padding: 8px 25px;
+          font-weight: bold;
+        margin-left: 260px;
+        margin-top: -8px;
+        border: none;
+      }
+      #macbtn:hover{
+              background-color: #0046BE;
+              cursor: pointer;
+          }
+      #container{
+          height: 950px;
+          width: 100%;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        
+         
+      }
+      #READY{
+          height: 150px;
+          width: 100%;
+         
+          justify-content: space-between;
+          display: flex;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          
+      }
+      #ready{
+          height: 100px;
+         
+          padding: 10px;
+         margin-left: 100px;
+         margin-top: 20px;
+          
+          
+      }
+      #READY1A+p{
+          margin-top: -75px;
+          margin-left: 200px;
+          font-size: 23px;
+          font-weight: bold;
+          color: #55555A;
+      }
+      #ready1{
+        margin-left: 200px;
+        font-size: 14px;
+        margin-top: -20px;
+        color: #040c13;
+      
+      }
+      #READY1{
+         
+       height: 150px;
+       width: 31%;
+    
+       }
+           #READY1A{
+        height: 80px;
+         
+          padding: 10px;
+         margin-left: 100px;
+         margin-top: 30px;
+       }
+       #READY1B{
+        height: 80px;
+         
+         padding: 10px;
+        margin-left: 30px;
+        margin-top: 30px;
+       }
+       #READY1C{
+        height: 80px;
+         
+         padding: 10px;
+        margin-left: 30px;
+        margin-top: 30px;
+       }
+       #READY1B+p{
+          margin-top: -80px;
+          margin-left: 150px;
+          font-size: 23px;
+          font-weight: bold;
+          color: #55555A;
+      }
+      #READY1C+p{
+          margin-top: -90px;
+          margin-left: 150px;
+          font-size: 23px;
+          font-weight: bold;
+          color: #55555A;
+      }
+      #ready2{
+        margin-left: 150px;
+        font-size: 14px;
+        margin-top: -20px;
+        color: #040c13;
+      
+      }
+      #ready3{
+        margin-left: 150px;
+        font-size: 14px;
+        margin-top: -20px;
+        color: #040c13;
+      
+      } 
+      #ready3+p{
+        margin-left: 150px;
+        font-size: 13px;
+        margin-top: -10px;
+        color: #55555A;
+      
+      }
+
+
+
+      #bluecontent{
+          height: 150px;
+          width: 100%;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          margin-top: 30px;
+       
+      }
+      #blueimg{
+          height: 100%;
+          width: 100%;
+      }
+
+
+
+      #easter{
+          display: flex;
+height: 610px;
+width: 100%;
+
+      }
+      #eastergifting{
+       
+         height: 610px;
+         width: 33%;
+         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+         justify-content:space-evenly;
+      }
+    #easter1{
+        display: flex;
+        height: 300px;
+        width: 100%;
+  
+    }
+    #eastergiftingbox{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        
+        margin-top: 60px;
+        margin-left: 25px;
+      
+        
+    }
+    #eastergiftingbox1{
+        display: flex;
+        height: 200px;
+        width: 200px;
+      
+        margin-top: 60px;
+        margin-left: 25px;
+        margin-right: 20px;
+      
+        
+    }
+    #eastimg{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        
+    }
+    #eastpo{
+        color: blue;
+        margin-top: -35px;
+        margin-left: 240px;
+        
+    }
+    #eastpo:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    #eastp:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    #eastp{
+        color: blue;
+        margin-top: -30px;
+        margin-left: 40px;
+    }
+
+
+    #ourfeatured{
+        margin-top: 30px;
+        height: 900px;
+        width: 100%;
+       
+    }
+    #featured{
+        display: flex;
+        height: 450px;
+        width: 100%;
+       
+    }
+    #featured1{
+        height: 300px;
+        width: 33%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+    #featimg{
+        height: 100%;
+        width: 100%;
+    }
+    #featp{
+        font-size: 20px;
+        color: blue;
+        margin-top: 20px;
+        font-weight: bolder;
+        
+    }
+    #featp:hover{
+        text-decoration: underline;
+        color: #55555A;
+        cursor: pointer;
+    }
+    #featp1{
+        color: blue;
+        font-size: 20px;
+        margin-top: -15px;
+        font-weight: bold;
+        
+    }
+    #featpo{
+        
+        margin-top: -10px;
+    }
+    #featpos{
+        margin-top: -10px;
+        color: grey;
+    }
+  /* img:hover{
+      transform: scale(1.2);
+  } */
+  #bluep{
+margin-top: -90px;
+margin-left: 120px;
+color: white;
+font-weight: bolder;
+font-size: 15px;
+  }
+  #bluep1{
+    margin-top: -15px;
+margin-left: 120px;
+color: white;
+font-weight: bolder;
+font-size: 25px;
+
+  }
+  #bluebtn{
+border-radius: 5px;
+background-color: white;
+color: blue;
+
+
+width: 180px;
+height: 30px;
+margin-top: -50px;
+margin-left: 80px;
+
+  }
+  #bluebtn:hover{
+      background-color: #55555A;
+    cursor: pointer;
+  }
+  #blue2{
+      font-size: 30px;
+      font-weight: bolder;
+      color: white;
+      margin-top: -100px;
+ margin-left: 300px;
+  }
+  #blue3{
+      font-size: 15px;
+
+      color: white;
+      margin-top: -25px;
+      margin-left: 300px;
+  }
+  #blue4{
+      font-size: 15px;
+   
+      color: white;
+      margin-top: -15px;
+      margin-left: 300px;
+  }
+ 
+  #dealcolor{
+      background-color: brown;
+      color: white;
+      font-size: 25px;
+  }
+  #you
+  {
+      height: 50px;
+      width: 100%;
+ 
+      border-bottom: 0.5px solid #c5cbd5;;
+  }
+ #pickimg{
+     margin-top: -40px;
+     height: 250px;
+ }
+ #pick1a{
+     font-size: 30px;
+     font-weight: bolder;
+     margin-top: 10px;
+ }
+ #pickimg1{
+    margin-top: -10px;
+    width: 248px;
+    margin-left: 10px;
+ }
+ #pickimg1:hover{
+     content: url("https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479683_sd.jpg;maxHeight=140;maxWidth=140");
+ }
+ #pick1b{
+     margin-top: -25px;
+ }
+ #pickimg2{
+    margin-top: 80px;
+    width: 360px;
+    margin-left: -8px;
+
+ }
+ #pickimg2:hover{
+     content: url("https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6478/6478305cv11d.jpg;maxHeight=640;maxWidth=550");
+ }
+ #pick1c{
+font-weight: bold;
+font-size: 15px;
+color:blue;
+margin-left: 30px;
+margin-top: 11px;
+cursor: pointer;
+ }
+ #pickp2{
+    font-weight: bold;
+font-size: 15px;
+color:blue;
+margin-left: 75px;
+
+ }
+ #pick1c:hover{
+     text-decoration: underline;
+     color: #55555A;
+     cursor: pointer;
+ }
+ #pickp2:hover{
+     text-decoration: underline;
+     color: #55555A;
+     cursor: pointer;
+ }
+ /* #pickstart{
+height: 30px;
+width: 20px;
+margin-top: -10px;
+ }
+ #pickstart1{
+
+ } */
+ #pickp3{
+font-size: 18px;
+font-weight: bold;
+margin-top: -13px;
+margin-left: 120px;
+ }
+ #pick1d{
+    font-size: 18px;
+font-weight: bold;
+margin-top: -13px;
+margin-left: 70px;
+ }
+ /* #per1::before{
+     content: " ";
+     background-color: teal;
+     color: #0046BE;
+     animation: textrotate 2s linear infinite;
+     -webkit-animation: textrotate 2s linear infinite;
+ }
+ 
+ @keyframes textrotate{
+     0%{
+         content: "50 per";
+     }
+     50%{
+         content: "";
+     }
+     100%{
+         content: 50%;
+     }
+ } */
+ img:hover{
+     transform:scale(1.2)
+ }
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <div id="top">
+        <div id="top1">
+            <div id="outlet">
+            <div id="outlet1">
+                <p>Outlet</p>
+            </div>
+            <div id="outlet2">
+                <p>Event</p>
+            </div>
+           
+          </div>
+          <p id="save">Save up to</p>
+           <div id="per">
+                <p id="per1">50</p>
+                 <p>%</p>
+            </div>
+            <p id="on">on clearance and open-box.</p>
+            <p id="end">Ends 4/17/22. Online and in store.Minimum savings is 5%.Exclusions apply. </p>
+        <button id="shop">Shop Now</button>
+        </div>
+
+
+
+        <div id="top2">
+           <div id="pick">
+                <selection id="product">              
+                <p id="pick1a">Today's popular picks</p>
+                <p id="pick1b">based on what's trending</p>
+               
+                <div>
+                <div id="product-img">
+                <img id="pickimg1"src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6477/6477091_sd.jpg;maxHeight=272;maxWidth=400"alt="">
+               <p id="pick1c">Microsoft-Surface Pro 8
+               </p>
+             <!-- <img id="pickstar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8TcjEZu4S3vUkSMXIWdhDPzpPglklkyZrA&usqp=CAU" alt=""> -->
+               <p id="pick1d">$399.99</p>
+               
+               
+              </div>
+              
+              </div>
+                </selection>
+                <selection id="product">              
+                   
+                   
+                   
+                    <div>
+                    <div id="product-img">
+                    <img id="pickimg2" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6449/6449513_sd.jpg;maxHeight=272;maxWidth=400" alt="">
+                   <p id="pickp2">Asus-11.6 Chromebook
+                   </p>
+                   <!-- <img id="pickstart1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVytf2l_U_sy8yWTR2PO-0mdRyoTjy33ZExQ&usqp=CAU" alt=""> -->
+                   <p id="pickp3">$699.99</p>
+                   
+                   
+                  </div>
+                  
+                  </div>
+                    </selection>
+                   
+         </div>
+
+
+
+         
+            <div id="Deal">
+              <div id="deal1">
+                  <p><span id="dealcolor">Deal</span> of the day</p>
+                  <p>See bonus deals</p>
+              </div>
+              <div id="deal2">
+                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6469/6469399_sd.jpg;maxHeight=300;maxWidth=300" alt="">
+                 <div id="deal3">
+                 <p id="vivo">ASUS-Vivobook 17.3" Laptop - Intel Core 10th Gen i5 - 12GB Memory - 1TB HDD</p>
+                 <p id="vivo1">$469.99</p>
+                 <p id="vivo2">$699.99</p>
+                 </div>
+                </div>
+            </div>
+          
+    </div>
+ 
+ </div>
+
+
+
+
+  <div id="middle">
+      <div id="you">
+      <p id="tabs">You viewed</p>
+    </div>
+      <hr id="underline">
+      <p id="tabs1">Manage all your recently viewed items</p>
+      <div id="tabcontainer">
+      
+      <div id="tabcontent">
+          <img id="tabimg"src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451519_sd.jpg;maxHeight=400;maxWidth=400" alt="">
+      <p id="tabstyle">Samsung - 82" Class Q6OT Series LED 4K UH....</p>
+        </div>
+      <div id="tabcontent1">
+          <img id="tabimg"src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426149_sd.jpg;maxHeight=400;maxWidth=400" alt="">
+      <p id="tabstyle">Sony - PlayStation 5 Console</p>
+        </div>
+      <div id="tabcontent2">
+          <img id="tabimg"src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401735_sd.jpg;maxHeight=400;maxWidth=400" alt="">
+      <p id="tabstyle">Samsung - 55" Class 7 Series LED UHD Sm....</p>
+        </div>
+        </div>
+        <div id="gridtemplate">
+        <div id="grid">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-65963-confident-210831-c34d2a74-8b79-41cd-8161-b9987666f7d6.png;maxHeight=72;maxWidth=72" alt="">
+        
+        <p id ="gridtemplate1">Shop safely and confidently.</p>
+        <p id="gridtemplate2">See our safety procedures</p>
+        </div>
+        <div id="grid1">
+            <img
+         src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-65963-expert-210831-70c599ed-fc34-47d8-9b93-85f899d93c8f.png;maxHeight=72;maxWidth=72" alt="">
+        <p id="grid1A">Get help shopping from home</p>
+        <p id="grid1B">Shop with an Expert</p>
+        </div>
+    </div>
+     </div>
+  </div>
+  <div id="big-screen-container">
+      <div id="bigscreen">
+          <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-530171-tv-d5b7887e-39f8-42d3-93cb-781647b27e38.jpg" alt="">
+         
+          <p id="big1">Big-screen TVs</p>
+          <p id="big2">as low as $299.99</p>
+          <button id="shopnow">shop Now</button>
+        <!-- </div> -->
+        <!-- <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-530171-tv-d5b7887e-39f8-42d3-93cb-781647b27e38.jpg" alt=""> -->
+      </div>
+      <div id="macbook">
+          <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-530171-macbook-d97b853e-fb25-4f29-bdc7-527d44597b24.jpg" alt="">
+      <p></p>
+      <p id="macbook1">Save up to $200 on select models</p>
+      <p id="macbook2">Minimum savings is $150.</p>
+      <button id="macbtn">Shop Now</button>
+        </div>
+  </div>
+
+
+
+
+
+  <div id="container">
+      <div id="READY">
+          <div id="READY1">
+          <img id="READY1A" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-37875-app-curbside-vpe_der-149659.png;maxHeight=144;maxWidth=144" alt="">
+          <p>Ready in one hour</p>
+          <p id="ready1">with Store or Curbside Pickup</p>
+          </div>
+          <div id="READY1">
+          <img id="READY1B" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=144;maxWidth=144" alt="">
+          <p>Free next-day delivery</p>
+          <p id="ready2">on thousands of items.</p>
+          </div>
+           <div id="READY1">
+           <img id="READY1C" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/gl-app-vpe-freeshippin_der1-206852.png;maxHeight=144;maxWidth=144" alt="">
+            <p>Same-day delivery</p>
+            <p id="ready3">Order by 3 p.m..,get it by 8 p.m. </p>
+                <p>order by 2 p.m. sunday</p>          
+         </div>
+      </div>
+
+
+
+      <div id="bluecontent">
+          <img id="blueimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/gl62892-tt-skinny-bg-lg-4ed9a87a-ca73-4e7a-8610-0f2159f2239b.jpg" alt=""/>
+     <p id="bluep">BEST BUY</p>
+     <p id="bluep1">totaltech</p>
+     <button id="bluebtn">Learn More</button>
+     <div id="bluetag">
+     <p id="blue2">The membership you and your tech deserve.</p>
+     <p id="blue3">Best Buy Totaltech  provides 24/7/365 tech support,upto 24 month of product</p>
+     <p id="blue4">protection,free standard installation and so much more.Terms and condition applys. </p>
+      
+    </div>
+    </div>
+
+
+
+
+
+<div id="easter">
+
+
+<div id="eastergifting">
+    <div id="easter1">
+    <div id="eastergiftingbox">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72315-flex-easter-220328-0153f8c1-8358-4a07-80df-7d67a51bd0ac.jpg;maxHeight=432;maxWidth=432" alt="">
+     </div>
+  
+    <div  id="eastergiftingbox1">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72315-flex-hot-wheels-220328-897af3f3-ef41-427d-94b3-82c2d1aff94b.jpg;maxHeight=432;maxWidth=432" alt="">
+    </div>
+</div>
+<p id="eastp">Easter basket ideas</p>
+<p id="eastpo">Toy and remote control cars</p>
+
+<div id="easter1">
+    <div  id="eastergiftingbox">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72315-flex-sets-220328-769b4b8c-5634-4b14-91d2-5de9b4a755a0.jpg;maxHeight=432;maxWidth=432" alt="">
+  </div>
+    <div  id="eastergiftingbox1">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72315-flex-doll-220328-a0776e0a-ca38-4974-92a3-d6aeade45506.jpg;maxHeight=432;maxWidth=432" alt="">
+ 
+   
+    </div>
+</div>
+<p id="eastp">Building sets</p>
+<p id="eastpo">Doll</p>
+</div>
+
+
+
+<div id="eastergifting">
+ 
+    <div id="easter1">
+    <div id="eastergiftingbox">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72316-flex-repair-220328-02aebddb-32fc-4f14-b98b-311c74a29ced.jpg;maxHeight=432;maxWidth=432" alt="">
+     </div>
+   
+    <div  id="eastergiftingbox1">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72316-flex-recycle-220328-5643195c-1173-4d11-8646-ca4f76a964df.jpg;maxHeight=432;maxWidth=432" alt="">
+   
+    </div>
+</div>
+<p id="eastp">Repair</p>
+<p  id="eastpo">Recycling</p>
+<div id="easter1">
+    <div  id="eastergiftingbox">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72316-flex-tradein-220328-869de7ef-fe3d-46e5-a092-3536d17dcfbb.jpg;maxHeight=432;maxWidth=432" alt="">
+    
+    
+    </div>
+    <div  id="eastergiftingbox1">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72316-flex-haulaway-220328-c6cb166e-5f1f-4f83-a515-ac4f31aa71f1.jpg;maxHeight=432;maxWidth=432" alt="">
+      
+    </div>
+  
+</div>
+<p  id="eastp">Trade-in</p>
+<p id="eastpo">Haul-away</p>
+
+</div>
+
+
+<div id="eastergifting">
+    <div id="easter1">
+    <div id="eastergiftingbox">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72317-flex-energystar-220328-90089094-3c9a-4d01-a18c-a1d995716729.jpg;maxHeight=432;maxWidth=432" alt="">
+    
+   
+    </div>
+    <div  id="eastergiftingbox1">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72317-flex-ebike-220328-0a034dd5-d94a-4a25-8fe5-e33b53c0a239.jpg;maxHeight=432;maxWidth=432" alt="">
+      
+    </div>
+</div>
+<p  id="eastp">ENERGY STAR</p>
+<p  id="eastpo">Electric transportation</p>
+
+<div id="easter1">
+    <div  id="eastergiftingbox">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72317-flex-charger-220328-864d9b15-173c-4c2c-bfd5-b3f63b462bd2.jpg;maxHeight=432;maxWidth=432" alt="">
+    
+    
+   
+</div>
+    <div  id="eastergiftingbox1">
+        <img id="eastimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-72317-flex-thermostat-220328-5584c953-1f21-46b2-a5a6-94ffa14921e7.jpg;maxHeight=432;maxWidth=432" alt="">
+      
+    </div>
+</div>
+<p  id="eastp">Electric car charges</p>
+<p  id="eastpo">Smart thermostats</p>
+
+</div>
+</div>
+
+
+<div id="ourfeatured">
+ 
+   <div id="featured">
+      <div id="featured1">
+          <img id="featimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/SOL-93899-iphone13-pro-pol_der-f73f557f-62fd-4937-9f7d-1aba33288b71.jpg;maxHeight=504;maxWidth=740" alt="">
+          <p id="featp">iPhone 13 Pro</p>
+          <p id="featp1"> Save up to $1,000</p>
+          <p id="featpo">with qualified activation and trade-in of iPhone 11 Pro or newer</p>
+          <p id="featpos">Terms and condition apply</p>
+        </div>
+     
+      <div id="featured1">
+          <img id="featimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-516854_der-2f35847b-0eda-4f62-9982-c97dee47ade2.jpg;maxHeight=504;maxWidth=740" alt="">
+      <p id="featp">Create the kitchen and laundry room of your dreams</p>
+      
+        </div>
+      <div id="featured1">
+          <img id="featimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-507174-220131_DER-6994e5dd-f8b9-4b6c-8b4b-1e0cd87a6bc1.jpg;maxHeight=504;maxWidth=740" alt="">
+     <p id="featp">Top-rated Cameras and lenses</p>
+        </div>
+    </div>
+
+
+
+      <div id="featured">
+      <div id="featured1">
+          <img id="featimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-526916_pol_COPE_DER-be9b754d-9b57-4355-98d8-40c330fbd93f.jpg;maxHeight=504;maxWidth=740" alt="">
+      <p id="featp">Save $40 or $60 on Samsung Galaxy Watch and</p> 
+          <p id="featp1">Watch4 Classic</p>
+       <p id="featpo">Save $40 on BT models and save $60 on LTE models featuring added cellular connectivity.</p>
+    </div>
+      <div id="featured1">
+          <img id="featimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/CO-100531_pol_COPE_DER-e1569d02-bb4f-4590-aafa-c321bc23e9bd.jpg;maxHeight=504;maxWidth=740" alt="">
+      <p id="featp">Save 20% on select ChiliSleep with select Seal mattresses</p>
+       <p id="featpo">Enjoy complete comfort with a Seal mattress and a ChiliSleep mattresspad or Cooling headband</p>
+    <p id="featpos">Excludes clearance and open-box items.Terms and conditions apply</p>
+    </div>
+      <div id="featured1">
+          <img id="featimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-528275_der-f53987a5-c3ee-4d33-973c-cdd743dd697d.jpg;maxHeight=504;maxWidth=740" alt="">
+     <p id="featp"> Toys for spring gifts.</p>
+          <p id="featpo">Surprise a child in your life with toys, trading cards and more</p> 
+          <p id="featpos">Some items chosen at random.</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+    </div>
+  
+</body>
+</html>
