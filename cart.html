@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <!-- Jquery script for including navbar to all pages -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#navbar').load('navbar.html')
+        });
+    </script>
+    <style>
+        #container-cart{
+            display: flex;
+            font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
+            font-size: 13px;
+            box-sizing: border-box;
+            padding-left: 32px;
+            justify-content: space-evenly;
+            background-color: #f0f2f4;
+        }
+
+        #savedItems{
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            padding: 40px 10px;
+            margin-top: 40px;
+            background-color: white
+        }
+
+        #saved{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #mostViewed{
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            padding: 10px 10px;
+            margin-top: 40px;
+            background-color: white
+        }
+
+        #mostViewedProducts{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+        }
+
+        .product{
+            padding: 15px 15px 0px 15px;
+        }
+
+        .product>button{
+            background-color: white;
+            border:1px solid #0b4ec0;
+            color: #0b4ec0;
+            border-radius: 4px;
+            padding: 2px 50px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .product>img{
+            height: 100px;
+            width: auto
+        }
+
+        .product>img+p:hover{
+            text-decoration: underline;
+            color: #03255f;
+            cursor: pointer;
+        }
+
+        #rightSection{
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            margin-left: 40px;
+            padding:40px;
+            background-color: white;
+        }
+
+        #orderSummary>button{
+            margin: 10px 2px; 
+            border: none;
+            border-radius: 5px;
+            background-color: #0046be; 
+            padding: 10px 40px;
+            cursor: pointer;
+            
+        }
+
+        #orderSummary>button>a{
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="container-cart">
+        <div id="leftSection">
+            <div id="heading">
+                <h3>Your cart is empty</h3>
+                <p>Just browsing? You can create an account and start earning reward points whenever you make a purchase.</p>
+            </div>
+
+            <div id="savedItems">
+                <div id="saved">
+                    <div><h3><i class="fa-regular fa-bookmark"></i> Saved Items</h3></div>
+                    <div><h1>^</h1></div>
+                </div>
+                <hr>
+                <div id="emptyList" style="text-align: center;">
+                    <h3>Your list is currently empty</h3>
+                    <p>Need inspiration? Check out recommended items, or search for items to save.</p>
+                </div>
+            </div>
+
+            <div id="mostViewed">
+                <div><h4 style="font-weight: bold;">Most-viewed items <span style="color: gray;">(20 Items)</span></h4></div>
+                <div id="mostViewedProducts">
+                    <div class="product" style="border-right: 1px solid #dde0e6;">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426149_sd.jpg;maxHeight=150;maxWidth=170" alt="">
+                        <p style="color: #0046be;margin-top: 5px;">Sony-PlayStation 5 Console</p>
+                        <p style="color: #0046be">&#11088&#11088&#11088&#11088&#11088 (23,838)</p>
+                        <p style="font-weight: bold;">$499.99</p>
+                        <button>See Details</button>
+                    </div>
+                    <div class="product" style="border-right: 1px solid #dde0e6">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4901/4901809_sd.jpg;maxHeight=150;maxWidth=170" alt="">
+                        <p style="color: #0046be;margin-top: 5px;">Apple-10.2-Inch iPad</p>
+                        <p style="color: #0046be">&#11088&#11088&#11088&#11088&#11088 (3,684)</p>
+                        <p style="font-weight: bold;">$329.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                    <div class="product" style="border-right: 1px solid #dde0e6">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6487/6487447_sd.jpg;maxHeight=150;maxWidth=170" alt="">
+                        <p style="color: #0046be;margin-top: 5px;">Apple-iPhone 13 Pro Max 5G</p>
+                        <p style="color: #0046be">&#11088&#11088&#11088&#11088&#11088 (685)</p>
+                        <p style="font-weight: bold;">$45.84/mo for 24 months</p>
+                        <button>See Details</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401735_sd.jpg;maxHeight=150;maxWidth=170" alt="">
+                        <p style="color: #0046be;margin-top: 5px;">Samsung-55" Class7 Series TV</p>
+                        <p style="color: #0046be">&#11088&#11088&#11088&#11088&#11088 (6,180)</p>
+                        <p style="font-weight: bold;">$399.99  <span style="text-decoration: line-through;">$479.99</span></p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rightSection">
+            <div id="orderSummary">
+                <div style="font-size: 20px; text-align: center;">Order Summary</div>
+
+                <hr>
+
+                <div id="total" style="display: flex; justify-content: space-between;">
+                    <div style="font-size: 20px;">Total</div>
+                    <div id="price" style="font-size: 20px;">$0.00</div>
+                </div>
+
+                <button><a href="index.html">Continue Shopping</a></button>
+
+                <hr>
+
+                <p style="font-weight: bold;">Looking for a lease to own option?</p>
+                <div style="display: flex;">
+                    <p style="margin-top: 0px;margin-right: 5px; font-size:10px">Enjoy the tech you want today.</p>
+                    <a href="" style="font-size:10px">Learn more ></a>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
