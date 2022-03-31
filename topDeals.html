@@ -8,21 +8,35 @@
     <link rel="stylesheet" href="./topDeals.css">
     <!-- Jquery script for including navbar to all pages -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--  Start Script by Rajashree -->
+    
     <script>
         $(function(){
             $('#navbar').load('navbar.html')
         });
     </script>
+
     <script>
         $(function(){
             $('#footer').load('bottompage.html')
         });
     </script>
+
+    <!--  End Script by Rajashree -->
+
 </head>
 <body>
+    <!-- Commented part -->
     <div id="navbar"></div>
+    <!-- <header>
+        <a class="navCls" href="navbar.html"></a>
+    </header> -->
+
+
+
+
 <!-- 1. Everything inside that container -->
-    <div class="container">
+    <div id="container">
 
 <!-- 2. Banner contains img, text -->
 
@@ -38,6 +52,8 @@
         </div >
 
 <!-- 3. Flex btn and para -->
+
+<div class="belowBanner">
 
         <div class="flexing">
             <button class="topDealBtn marg">Top Deals</button>
@@ -132,10 +148,10 @@
                     <div>
                         <img id="fi_item_img"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120" alt="">                        
                     </div>
-                    <a href="">samsung-82-class-q60t-series-led-4k-uhd-smart-tizen-tv</a>
+                    <a href="">samsung-82-class-q60t-series-led-4k-uhd-smart-tizen</a>
                     <span class="fi_item_price">$1599.99</span>
                     <span class="pad_left">
-                        <button class="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                        <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
                     </span>
                 </div>
 
@@ -144,10 +160,10 @@
                         <div>
                             <img id="fi_item_img"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Insignia_4C_eps_renditionpicker_319x319-91902.png;maxHeight=70;maxWidth=120" alt="">                        
                         </div>
-                        <a href="">insignia-75-class-f30-series-led-4k-uhd-smart-fire-tv</a>
+                        <a href="">insignia-75-class-f30-series-led-4k-uhd-smart-fire</a>
                         <span class="fi_item_price">$689.99</span>
                         <span class="pad_left">
-                            <button class="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                            <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
                         </span>
                     </div>                   
 
@@ -157,10 +173,10 @@
                     <div>
                         <img id="fi_item_img"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120" alt="">                        
                     </div>
-                    <a href="">samsung-58-class-q60t-series-led-4k-uhd-smart-tizen-tv</a>
+                    <a href="">samsung-58-class-q60t-series-led-4k-uhd-smart-tizen</a>
                     <span class="fi_item_price">$479.99</span>
                     <span class="pad_left">
-                        <button class="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                        <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
                     </span>
                 </div> 
 
@@ -168,10 +184,10 @@
                     <div>
                         <img id="fi_item_img"  src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/TCL_Red_4_Rev_eps_renditionpicker_319x319-92350.png;maxHeight=70;maxWidth=120" alt="">                        
                     </div>
-                    <a href="">tcl-50-class-5-series-qled-4k-uhd-smart-google-tv</a>
+                    <a href="">tcl-50-class-5-series-qled-4k-uhd-smart-google</a>
                     <span class="fi_item_price">$479.99</span>
                     <span class="pad_left">
-                        <button class="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                        <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
                     </span>
                 </div>
             </div>
@@ -285,7 +301,7 @@
                 <a href="">Breville-smart-oven-air-fryer-pro-convection-toaster-pizza-oven-stainless-steel</a>
                 <span class="fi_item_price">$349.95</span>
                 <span class="pad_left">
-                    <button class="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
+                    <button id="fi_item_btn"><img id="cart_img"  src="./images/shopping-cart.png" alt=""> Add to Cart</button>
                 </span>
 
             </div>
@@ -366,7 +382,7 @@
 
 
 
-
+      </div>
     </div>
     <div id="footer"></div>
     
