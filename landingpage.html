@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
+
+         <!-- Jquery script for including navbar to all pages -->
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+         <script>
+             $(function(){
+                 $('#navbar').load('navbar.html')
+             });
+         </script>
+
+
+
     <style>
         
         #top{
@@ -43,7 +54,7 @@
         #outlet{
             display: flex;
             height: 40px;
-            width: 200px;
+            width: 210px;
             
             margin-left: 50px;
             margin-top: 50px;
@@ -69,7 +80,7 @@
         #outlet1 >p{
             font-size: 35px;
             color: yellow;
-            margin-top: 2px;
+            margin-top: -5px;
             font-weight: bolder;
             margin-left: 2px;
         
@@ -77,13 +88,13 @@
         #outlet2 >p{
             font-size: 35px;
             color: white;
-            margin-top: 2px;
+            margin-top: -5px;
             font-weight: bolder;
             margin-left: 4px;
         }
         #save{
           font-size: 60px;
-          color: red;
+          color: brown;
           margin-top: 20px;
           margin-left: 50px;
           font-weight: bold;
@@ -101,27 +112,28 @@
             font-weight: bold;
         }
         #per>p+p{
-            color: red;
+            color: brown;
            font-weight: bold;
            margin-left: 10px;
         }
         #on{
-            font-size: 50px;
-            margin-top: -350px;
-            margin-left: 50px;
+            font-size: 40px;
+            margin-top: -100px;
+            margin-left: 55px;
         }
         #end{
-            margin-left: 50px;
-            margin-top: -10px;
+            margin-left: 100px;
+            margin-top: 8px;
+            font-size: 12px;
         }
         #shop{
-            width: 130px;
-            height: 40px;
+            width: 110px;
+            height: 30px;
             background-color: blue;
             border-radius: 5px;
             color: white;
             margin-left: 200px;
-            margin-top: -10px;
+            margin-top: 5px;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
             border: none;
         }
@@ -143,6 +155,7 @@
       }
       #deal1>p+p{
           color: blue;
+          margin-top: 15px;
       }
       #deal1>p+p:hover{
           text-decoration: underline;
@@ -150,6 +163,7 @@
       }
       #dealday{
           font-size: 15px;
+         
       }
       #deal2{
           display: flex;
@@ -184,7 +198,7 @@ cursor: pointer;
       #vivo1{
           color: black;
           font-weight: bold;
-          margin-top: -10px;
+          margin-top: -5px;
           margin-left: 40px;
       }
       #vivo2{
@@ -209,14 +223,14 @@ cursor: pointer;
           font-weight: bold;
           text-decoration: underline;
           margin-left: 30px;
-          margin-top: 24px;
+          margin-top: 21px;
       }
      
       #tabs1{
           font: 15px;
           color: blue;
         margin-left: 50px;
-        margin-top: -160px;
+        margin-top: -145px;
       
       font-weight: bold;
          
@@ -234,6 +248,7 @@ cursor: pointer;
          border: 0.5px solid #c5cbd5;
          border-radius: 5px;
          margin-left: 70px;
+         margin-top: 30px;
       
          
      }
@@ -252,6 +267,7 @@ cursor: pointer;
          border: 0.5px solid #c5cbd5;
          border-radius: 5px;
          margin-left: 35px;
+         margin-top: 30px;
       
          
      }#tabcontent2{
@@ -260,14 +276,16 @@ cursor: pointer;
          border: 0.5px solid #c5cbd5;
          border-radius: 5px;
          margin-left: 35px;
+         margin-top: 30px;
       
          
      }
      #tabimg{
-         height: 150px;
-         width: 85%;
+         height: 250px;
+         width: 95%;
          display: flex;
-padding: 55px 20px;
+padding: 55px 15px;
+margin-left: 5px;
      }
      #tabstyle{
          color: blue;
@@ -325,7 +343,7 @@ justify-content: center;
     }
     #gridtemplate1{
       
-        margin-top: -55px;
+        margin-top: -60px;
         font-size: 23px;
         font-weight: bold;
         margin-left: 50px;
@@ -335,7 +353,7 @@ justify-content: center;
     font-size:15px;
     color: blue;
     
-    margin-top: -25px;
+    margin-top: -28px;
     
     margin-left: 50px;
     font-weight: bold;
@@ -851,17 +869,174 @@ margin-left: 70px;
          content: 50%;
      }
  } */
- img:hover{
+
+
+
+
+ /* img:hover{
      transform:scale(1.2)
- }
+ } */
+
+
+
+
+ /* bottompage */
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container-uni{
+/* 	max-width: 1170px; */
+	margin:auto;
+}.top-row{
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+}
+.box{
+ 
+    height: 200px;
+    width: 20%;
+    text-align: center;
+}
+.icon{
+    font-size: 60px;
+    color: #70757d;
+    padding-top: 60px;
+}
+.link{
+    color: #0000f5;
+    text-decoration: none;
+    
+}
+.p1{
+    padding-top: 20px;
+    font-weight: 600;
+    
+}
+.link:hover{
+    color: #0a0056;
+    text-decoration: underline;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color:#f0f2f4;
+    padding: 70px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 20px;
+	color: #000000;
+    line-height: 30px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 650;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 1px;
+	box-sizing: border-box;
+	width: 100px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color:blue;
+	text-decoration: none;
+	font-weight: 300;
+	
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #0e0c0c;
+	padding-left: 8px;
+    text-decoration: underline;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	background-color: rgba(80, 174, 144, 0.775);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	color: #1d1df0;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.exp{
+    display: flex;
+    margin-top: 80px;
+}
+.feedback{
+    color: #0000f5;
+}
+.feedback:hover{
+    color: #0a0056;
+}
+/* responsive
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+} */
+
+
+
+*{
+    font-size:Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
+}
     </style>
 </head>
 
 
 
-
-
 <body>
+    
+
+
+<div id="navbar"></div>
     <div id="top">
         <div id="top1">
             <div id="outlet">
@@ -1197,5 +1372,116 @@ margin-left: 70px;
 
     </div>
   
+
+
+
+
+ <footer class="footer">
+         
+ <div class="container-uni">
+     <div class="top-row">
+         <div class="box">
+            <i class="fa-solid fa-circle-question icon"></i>
+           <a  class="link" href=""> <p>Visit our Support Center</p> </a>
+         </div>
+         <div class="box">
+            <i class="fa-solid fa-box-open icon"></i>
+            <a  class="link" href=""> <p>Check your Order Status</p> </a>
+         </div>
+         <div class="box">
+            <i class="fa-solid fa-truck-fast icon"></i>
+            <a  class="link" href=""><p> Shipping,Delivery & Store Pickup </p></a>
+
+         </div>
+         <div class="box">
+            <i class="fa-solid fa-arrow-right-arrow-left icon"></i>
+            <a  class="link" href=""> <p>Returns & Exchanges</p> </a>
+         </div>
+         <div class="box">
+            <i class="fa-solid fa-dollar-sign icon"></i>
+            <a class="link" href=""> <p class="p1">Price Match Guarantee</p> </a>
+         </div>
+     </div>
+     <hr style="width:100%;text-align:left;margin-left:0;margin-bottom: 30px;">
+     <div class="row">
+         <div class="footer-col">
+             <h4>order & purchases</h4>
+             <ul>
+                 <li><a href="">Check Order Status</a></li> 
+                 <li><a href="">Shipping, Delivery & Pickup</a></li> 
+                 <li><a href="">Returns & Exchanges</a></li> 
+                 <li><a href="">Price Match Guarantee</a></li> 
+                 <li><a href="">Product Recalls</a></li> 
+                 <li><a href="">Trade-In Program</a></li> 
+                 <li><a href="">Gift Cards</a></li> 
+             </ul>
+             <br>
+             <h4>Payment Options</h4>
+             <ul>
+
+                 <li><a href="">My Best Buy® Credit Card</a></li> 
+                 <li><a href="">Pay Your Bill at Citibank</a></li> 
+                 <li><a href="">Lease to Own</a></li> 
+             </ul>
+         </div>
+         <div class="footer-col">
+            <h4>Support & Services</h4>
+            <ul>
+                
+                    <li><a href="">Visit our Support Center</a></li> 
+                    <li><a href="">Shop with an Expert</a></li> 
+                    <li><a href="">Schedule a Service</a></li> 
+                    <li><a href="">Manage an Appointment</a></li> 
+                    <li><a href="">Protection & Support Plans</a></li> 
+                    <li><a href="">Haul Away & Recycling</a></li> 
+                    <li><a href="">Contact Us</a></li> 
+            </ul>
+            <br>
+            <h4>Rewards & Membership</h4>
+            <ul>
+                    <li><a href="">Best Buy Totaltech</a></li> 
+                    <li><a href="">My Best Buy</a></li> 
+                    <li><a href="">View Points & Certificates</a></li> 
+                    <li><a href="">Member Offers</a></li> 
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Partnerships</h4>
+            <ul>
+                <li><a href="">Affiliate Program</a></li>
+                <li><a href="">Advertise with Us</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Best Buy Health</a></li>
+                <li><a href="">Best Buy Education</a></li>
+                <li><a href="">Best Buy Business</a></li>
+            </ul>
+            <br>
+            <br>
+            <h4 class="h4">About Best Buy</h4>
+            <ul>
+                <li><a href="">Corporate Information</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Corporate Responsibility & Sustainability</a></li>
+                <li><a href="">Discover & Learn</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+               <a href=""><i class="fab fa-facebook-f"></i></a>
+               <a href=""><i class="fab fa-twitter"></i></a>
+               <a href=""><i class="fab fa-instagram"></i></a>
+               <a href=""><i class="fab fa-linkedin-in"></i></a>
+               <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+           
+        </div>
+     </div>
+     <span class="exp">How was your experience?<a class="feedback" href=""> Give feedback about our website</a></span>
+     <hr style="width:100%;text-align:left;margin-left:0;margin-top: 30px;">
+ </div>
+ </footer>
+ 
 </body>
 </html>
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signIn.css">
+    <style>
+        body{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    background-color:#f0f2f4 ;
+    background-size: cover;
+    background-position: center;
+}
+.top-bar{
+    height: 90px;
+    width: 100%;
+   display: flex;
+    background-color: rgb(19, 19, 198);
+    color: white;  
+    justify-content: space-around; 
+
+
+}
+.top-in{
+    height: 70px;
+    width:10%;
+
+  margin-top: 19px;
+}
+.imge{
+  max-width: 70%;
+  max-height: 80%;
+}
+.returns{
+    color: white;
+    font-size: 17px;
+}
+.b{
+   
+  margin-top: 35px;
+}
+.sign-in-form{
+    width: 470px;
+    box-shadow:rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    background: #fff;
+    padding: 20px;
+
+    margin: 2% auto 0;
+    text-align: center;
+} 
+.sign-in-form h1{
+    color: black;
+margin-bottom: 30px;
+}
+.input-box{
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px 0 15px 0;
+    margin: 10px 0;
+    border: 1px solid #999;
+    outline: none;
+    font-size: large;
+    padding-left: 10px;
+}
+button{
+   
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid #999;
+    margin: 10px 0;
+ border: none;
+ outline: none;
+ cursor: pointer;
+}
+.signin-btn{
+    background-color: #0b19b3;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.signin-btn:hover{
+    background-color: rgb(6, 6, 118);
+    transition: 0.4s;
+}
+.webAuthn-btn{
+    border: 1px solid blue;
+    font-size: 20px;
+    color: blue;
+    font-weight: 550;
+}
+.webAuthn-btn:hover{
+    background-color: rgb(6, 6, 118);
+    color: white;
+    transition: .5s;
+}
+.apple-btn{
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 550;
+}
+.apple-btn:hover{
+background-color: black;
+color: white;
+transition: 0.5s;
+}
+.google-btn{
+    border: 1px solid blue;
+    font-size: 20px;
+    color: blue;
+    font-weight: 550;
+}
+.google-btn:hover{
+    background-color: rgb(6, 6, 118);
+ color: white;
+ transition: 0.5s;
+}
+a{
+    text-decoration:none;
+    color: #1259b6;
+}
+a:hover{
+    text-decoration:underline;
+}
+hr{
+    margin-top: 20px;
+    width: 97%;
+}
+.or{
+    background: white;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+p{
+    font-size: 15px;
+}
+::-webkit-input-placeholder{
+    color:rgba(32, 13, 13, 0.537);
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 550;
+}
+.forgot{
+font-size: large;
+
+margin-right: 280px;
+color: blue;
+}
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-in a">
+        <img class="imge" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136"/>
+    </div>
+        <div class="top-in b">
+        <a class="returns" href="#">Return to previous page</a>
+    </div>
+    </div>
+    <div class="sign-in-form">
+    <h1>Check Out Here</h1>
+    
+    <form>
+        
+        <input type="name" class="input-box" placeholder="enter your name">
+        <input type="number" class="input-box" placeholder="card number">
+      
+        <input type="text"  class="input-box" placeholder="CVV"></input>
+ 
+     <input type="date"  class="input-box" placeholder="Expiry Date"></input>
+     <input type="number"  class="input-box" placeholder="OTP"></input>
+      <!-- <hr> -->
+     <!-- <p class="or">or</p>  -->
+     <button type="button" class="webAuthn-btn">Payment</button>
+     <!-- <button type="button" class="apple-btn">Sign In with Apple</button> -->
+     <!-- <button type="button" class="google-btn">Sign In with Google</button>  -->
+     <p>By continuing you agree to our <a href="#">Terms and Conditions</a>, our <a href="#">Privacy Policy</a>
+        , and the <a href="#">My Best Buy® Program Terms.</a></p>
+     <hr>
+     <!-- <h4>Don't have an account? <a href="#">Create an account</a></h4> -->
+ </form>
+
+</div>
+</body>
+</html>
+<script>
+
+
+
+
+</script>
