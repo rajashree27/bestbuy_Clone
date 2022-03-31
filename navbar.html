@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        .divNav{
+            background-color: #0046be;
+            color: white;
+        }
+
+        #navbar{
+            border-bottom: 1px solid #4976e6;
+        }
+
+        #topNav{
+            display: grid;
+            grid-gap: 48px;
+            grid-template-columns: 68px 86px 10fr 7fr 75px;
+            grid-template-rows: 1fr;
+            padding: 16px 32px;
+            width: 100%;
+        }
+
+        .menu{
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            /* box-sizing: border-box; */
+        }
+
+        .menu>button, #aiea>button, #cart>button{
+            background-color:#0046be;
+            border: none;
+        }
+
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-radius: 5px 0px 0px 5px;
+            border-right: white;
+            float: left;
+            width: 80%;
+            /* background: #f1f1f1; */
+            color: black;
+        } 
+
+        form.example button {
+            float: left;
+            width: 10%;
+            padding: 10px;
+            background: white;
+            color:#6b93d9;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: white;
+            border-radius: 0px 5px 5px 0px;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        #aiea{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        #cart{
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        button>a{
+            color: white;
+            text-decoration: none;
+        }
+
+        button>a:hover{
+            color: white;
+            text-decoration: none;
+        }
+
+        #nav_bottom{
+            padding: 12px 32px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            font-size: 13px;
+        }
+
+        #navBottomLeft{
+            display: flex;
+            flex-wrap: nowrap;
+            box-sizing: border-box;
+        }
+
+        .bottomLeftLinks{
+            margin-right: 28px;
+            color: white;
+            text-decoration: none;
+            box-sizing: border-box;
+            cursor: pointer;
+            
+        }
+
+        .leftBottom_ul{
+            display: flex;
+            flex: 0 1 auto;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 0;
+            /* margin: 0; */
+            /* box-sizing: border-box; */
+            /* max-height: 16px; */
+            /* overflow: hidden; */   
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+        li :hover{
+            color: white;
+            text-decoration: underline;
+        }
+
+        #navBottomRight{
+            align-items: center;
+            display: flex;
+            flex: 1 0 auto;
+            justify-content: space-evenly;
+            margin: 0 0 0 150px;
+            padding: 0;
+        }
+
+        .navBottomRightItems{
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="navbarContainer" class="divNav">
+        <div id="navbar" class="container-fluid divNav">
+            <!-- Top navbar part -->
+            <div id="topNav" class="divNav">
+                <a href="index.html"><img src="BestBuy_Logo.png" alt="logo" height="40" width="68"/></a>
+                
+                <div class="menu" class="divNav">
+                    <i class="fa-solid fa-bars" style="display: inline;"></i>
+                    <!-- Dropdown menu -->
+                    <button class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;text-decoration: none;">
+                        Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Deals</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Support & Services</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Brands</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Featured</a>
+                        </div>
+                    </button>
+                </div>
+
+                <form class="example" action="">
+                    <input type="text" placeholder="Search Best Buy" name="search2">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+                <div id="aiea" class="divNav">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <button>Aiea</button>
+                </div>
+
+                <div id="cart" class="divNav">
+                    <img src="https://www.bestbuy.com/~assets/bby/_com/shop/cart-icon/dist/client/images/066a3c85f1c275de42889e546accc7b6.svg" alt="">
+                    <button><a href="cart.html">Cart</a></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bottom navbar part -->
+        <div id="bottomNav" class="divNav">
+            <nav id="nav_bottom">
+                <div id="navBottomLeft" class="divNav">
+                    <ul class="leftBottom_ul"></ul>
+                        <li><a class="bottomLeftLinks" href="topDeals.html">Top Deals</a></li>
+                        <li><a class="bottomLeftLinks" href="#">Deal of the Day</a></li>
+                        <li><a class="bottomLeftLinks" href="#">Totaltech Membership</a></li>
+                        <li><a class="bottomLeftLinks" href="#">Credit Cards</a></li>
+                        <li><a class="bottomLeftLinks" href="#">Gift Cards</a></li>
+                         <!-- Dropdown menu -->
+                        <button class="nav-item dropdown"  style="border: none; background-color: #0046be; padding: 0px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                            More &#x2228</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Gift Ideas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Health & Wellness</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Best Buy Business</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">X Close</a>
+                            </div>
+                        </button>
+                </div>
+
+                <ul id="navBottomRight">
+                    <li class="navBottomRightItems">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <!-- Dropdown menu -->
+                        <button class="nav-item dropdown"  style="border: none; background-color: #0046be; padding: 0px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;text-decoration: none;">
+                            Account &#x2228</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" style="color: #6487b9; text-decoration: none;">Sign In</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" style="color: #6487b9; text-decoration: none;">Create Account</a>
+                            </div>
+                        </button>
+                    </li>
+
+                    <li class="navBottomRightItems">
+                        <button class="nav-item dropdown"  style="border: none; background-color: #0046be; padding: 0px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                            Recently Viewed &#x2228</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" style="color: black; text-decoration: none;"></a>
+                            <div class="dropdown-divider"></div>
+                    </li>
+
+                    <li class="navBottomRightItems">
+                        <button class="nav-item dropdown"  style="border: none; background-color: #0046be; padding: 0px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                            Order Status &#x2228</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" style="color: black; text-decoration: none;"></a>
+                            <div class="dropdown-divider"></div>
+                    </li>
+
+                    <li class="navBottomRightItems">
+                        <button class="nav-item dropdown"  style="border: none; background-color: #0046be; padding: 0px;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white">
+                            Saved Items &#x2228</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" style="color: black; text-decoration: none;"></a>
+                            <div class="dropdown-divider"></div>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
