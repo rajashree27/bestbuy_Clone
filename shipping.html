@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    
-    <link rel="stylesheet" href="signIn.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#navbar').load('navbar.html')
+        });
+    </script> -->
+    <!-- <link rel="stylesheet" href="signIn.css"> -->
     <style>
-        body{
+
+
+body{
     margin: 0;
     padding:0;
     font-family: sans-serif;
     background-color:#f0f2f4 ;
     background-size: cover;
     background-position: center;
+
 }
 .top-bar{
     height: 90px;
@@ -24,7 +31,7 @@
     background-color: rgb(19, 19, 198);
     color: white;  
     justify-content: space-around; 
-
+    
 
 }
 .top-in{
@@ -126,28 +133,32 @@ color: blue;
     </style>
 </head>
 <body>
+
+    <!-- <div id="navbar"></div> -->
+
     <div class="top-bar">
         <div class="top-in a">
         <img class="imge" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136"/>
-    </div>
+        </div>
         <div class="top-in b">
         <a class="returns" href="#">Return to previous page</a>
-    </div>
+         </div>
     </div>
     <div class="sign-in-form">
-    <h1>Check Out Here</h1>
+    <h1>Shipping your Order</h1>
     
     <form>
         
-        <input type="name" class="input-box" placeholder="enter your name" id="input-a">
-        <input type="number" class="input-box" placeholder="card number" id="input-b">
+        <input type="text" class="input-box" placeholder="enter your name" id="input1">
+        <input type="number" class="input-box" placeholder="mobile number"  id="input2">
       
-        <input type="text"  class="input-box" placeholder="CVV" id="input-c">
- 
-     <input type="date"  class="input-box" placeholder="Expiry Date" id="input-d">
-     <input type="number"  class="input-box" placeholder="OTP" id="input-e">
+        <input type="text"  class="input-box" placeholder="City*"  id="input3">
+        <input type="text"  class="input-box" placeholder="State*"  id="input4">
+     <input type="text"  class="input-box" placeholder="Address"  id="input5">
+     <input type="number"  class="input-box" placeholder="PINCODE"  id="input6">
    
-     <input type="submit" class="webAuthn-btn" value="CheckOut">
+     <!-- <button type="button" class="webAuthn-btn">Proceed</button> -->
+     <input type="submit" value="Proceed" class="webAuthn-btn">
 
      <p>By continuing you agree to our <a href="#">Terms and Conditions</a>, our <a href="#">Privacy Policy</a>
         , and the <a href="#">My Best Buy® Program Terms.</a></p>
@@ -165,15 +176,20 @@ function payment()
 {
     event.preventDefault()
     //console.log("hello")
-//    document.querySelector(".webAuthn-btn").alert("Payment Successfull")
-alert("Congrations your order has beed placed")
-   document.querySelector("#input-a").value=""
-   document.querySelector("#input-b").value=""
-   document.querySelector("#input-c").value=""
-   document.querySelector("#input-d").value=""
-   document.querySelector("#input-e").value=""
+//    document.querySelector(".webAuthn-btn").alert("Order Placed Successfull")
 
-window.location.href="endpage.html"
+
+// console.log("hello")
+alert("Shipping completed, continue for Checkout")
+document.querySelector("#input1").value=""
+document.querySelector("#input2").value=""
+document.querySelector("#input3").value=""
+document.querySelector("#input4").value=""
+document.querySelector("#input5").value=""
+document.querySelector("#input6").value=""
+
+
+window.location.href="payment.html"
 
 }
 

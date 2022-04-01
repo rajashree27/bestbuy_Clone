@@ -14,7 +14,11 @@
              });
          </script>
 
-
+<script>
+    $(function(){
+        $('#footer').load('bottompage.html')
+    });
+</script>
 
     <style>
         
@@ -255,7 +259,7 @@ cursor: pointer;
      #underline{
          border: none;
          height: 1px;
-         background-color: red;
+        
      }
      #tabcontainer{
          display: flex;
@@ -941,6 +945,7 @@ ul{
 .footer{
 	background-color:#f0f2f4;
     padding: 70px;
+    border: 1px solid red;
 }
 .footer-col{
    width: 25%;
@@ -1027,6 +1032,14 @@ ul{
 *{
     font-size:Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
 }
+
+
+/* 
+#ContainerLanding{
+    height: auto;
+    width:98%;
+    border: 1px solid black;
+} */
     </style>
 </head>
 
@@ -1037,6 +1050,11 @@ ul{
 
 
 <div id="navbar"></div>
+
+
+<!-- landingpage -->
+
+<div id="ContainerLanding">
     <div id="top">
         <div id="top1">
             <div id="outlet">
@@ -1161,6 +1179,9 @@ ul{
     </div>
      </div>
   </div>
+
+
+
   <div id="big-screen-container">
       <div id="bigscreen">
           <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/subghp-MMT-530171-tv-d5b7887e-39f8-42d3-93cb-781647b27e38.jpg" alt="">
@@ -1373,10 +1394,12 @@ ul{
     </div>
   
 
+</div>
+</div>
 
+<div id="footer"></div>
 
-
- <footer class="footer">
+ <!-- <footer class="footer">
          
  <div class="container-uni">
      <div class="top-row">
@@ -1481,7 +1504,7 @@ ul{
      <hr style="width:100%;text-align:left;margin-left:0;margin-top: 30px;">
  </div>
  </footer>
- 
+  -->
 </body>
 </html>
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#navbar').load('navbar.html')
+        });
+    </script>
+
+
+
+
+    <style>
+        #animation{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 80%;
+   margin: auto;
+            margin-top: 100px;
+           
+           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        #endpage1{
+            font-size: 50px;
+         text-align: center;
+           color: teal;
+           font-weight: bolder;
+           /* margin-top: 140px;  */
+        }
+        #animation::after{
+            content: " ";
+            background-color: white;
+            color: teal;
+            font-size: 50px;
+            animation: textrotate 3s linear infinite;
+            -webkit-animation: textrotate 3s linear infinite;
+        }
+        @keyframes textrotate{
+            0%{
+                content: "Thanks For Shopping";
+            }
+            /* 50%{
+                content: "";
+            } */
+            100%{
+                content: "Stay Safe and healthy";
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+
+    <div id="animation">
+       <p id="endpage1"></p>
+    </div>
+</body>
+</html>
