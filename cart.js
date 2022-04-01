@@ -14,15 +14,26 @@ cartData.map(function(el,ind)
 {
     var box=document.createElement("div");
 
+    var divHead=document.createElement("p");
+    divHead.innerText="Cart Items:";
+    divHead.style="font-size:25px;"
+
+    var line=document.createElement("hr");
+
+    var imgItm=document.createElement("img")
+    // imgItm.src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401735_sd.jpg;maxHeight=640;maxWidth=250"
+
     var nameItm=document.createElement("p")
     nameItm.innerText=el.itemCat;
+    nameItm.style="color:blue;"
 
     var priceItm=document.createElement("p")
-    priceItm.innerText=el.itemPrice;
+    priceItm.innerText="$"+el.itemPrice;
 
-    box.append(nameItm,priceItm);
+
+    box.append(divHead,line,imgItm,nameItm,priceItm);
     
-    document.querySelector("#heading").innerHTML="";
-    document.querySelector("#heading").append(box);
+    document.querySelector("#cartItemsList").innerHTML="";
+    document.querySelector("#cartItemsList").append(box);
 
 })

@@ -15,6 +15,7 @@ function addCartFun()
         cartItemArr.push(cartItemObj);
         // console.log(cartItemArr)
         localStorage.setItem('cartItems', JSON.stringify(cartItemArr));
+        alert("Item added to cart");
 
     
 }
