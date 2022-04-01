@@ -25,7 +25,7 @@
         #container-cart{
             display: flex;
             font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-            font-size: 13px;
+            font-size: 15px;
             box-sizing: border-box;
             padding-left: 32px;
             justify-content: space-evenly;
@@ -33,6 +33,13 @@
         }
 
         #savedItems{
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            padding: 40px 10px;
+            margin-top: 40px;
+            background-color: white
+        }
+
+        #cartItemsList{
             box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
             padding: 40px 10px;
             margin-top: 40px;
@@ -56,6 +63,17 @@
             display: grid;
             grid-template-columns: repeat(4,1fr);
             grid-template-rows: auto;
+        }
+
+        .formatDiv{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+            padding: 10px 10px;
+            margin-top: 40px;
+            background-color: white
         }
 
         .product{
@@ -111,12 +129,12 @@
     <div id="navbar"></div>
     <div id="container-cart">
         <div id="leftSection">
-            <div id="heading">
+            <div id="cartItemsList" class="formatDiv">
                 <h3>Your cart is empty</h3>
                 <p>Just browsing? You can create an account and start earning reward points whenever you make a purchase.</p>
             </div>
 
-            <!-- <div id="savedItems">
+            <div id="savedItems">
                 <div id="saved">
                     <div><h3><i class="fa-regular fa-bookmark"></i> Saved Items</h3></div>
                     <div><h1>^</h1></div>
@@ -126,7 +144,7 @@
                     <h3>Your list is currently empty</h3>
                     <p>Need inspiration? Check out recommended items, or search for items to save.</p>
                 </div>
-            </div> -->
+            </div>
 
             <div id="mostViewed">
                 <div><h4 style="font-weight: bold;">Most-viewed items <span style="color: gray;">(20 Items)</span></h4></div>
