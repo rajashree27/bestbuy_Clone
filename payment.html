@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
-    <link rel="stylesheet" href="signIn.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#navbar').load('navbar.html')
+        });
+    </script>
+    <!-- <link rel="stylesheet" href="signIn.css"> -->
     <style>
         body{
     margin: 0;
@@ -69,7 +74,7 @@ margin-bottom: 30px;
     font-size: large;
     padding-left: 10px;
 }
-button{
+/* button{
    
     width: 100%;
     padding: 15px;
@@ -80,7 +85,7 @@ button{
  border: none;
  outline: none;
  cursor: pointer;
-}
+} */
 .signin-btn{
     background-color: #0b19b3;
     color: white;
@@ -126,14 +131,16 @@ color: blue;
     </style>
 </head>
 <body>
-    <div class="top-bar">
+    <div id="navbar"></div>
+
+    <!-- <div class="top-bar">
         <div class="top-in a">
         <img class="imge" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136"/>
     </div>
         <div class="top-in b">
         <a class="returns" href="#">Return to previous page</a>
     </div>
-    </div>
+    </div> -->
     <div class="sign-in-form">
     <h1>Check Out Here</h1>
     
