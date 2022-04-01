@@ -10,27 +10,35 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  border: none;
+
 }
 
 #container{
     /* border: 1px solid black; */
     width: 100%;
     height: auto;
+    margin-top: 0.38rem;
     /* margin: 10px; */
     /* padding: 0px 10px 0px 10px; */
     overflow: hidden;
     box-sizing: border-box;
+    border: none;
+
 }
 
 /* 2. Banner */
 .banner{
+    border: none;
     position: relative;
 }
 
-.belowBanner{
-    border: 1px solid black;
+/* Just meant to give padding to below banner  */
 
-        padding: 0px 10px 0px 10px;
+.belowBanner{
+    /* border: 1px solid black; */
+
+    padding: 0px 10px 0px 10px;
 
 }
 .lapImg{
@@ -40,7 +48,7 @@
 
 .closeToImg{
     position: absolute;
-    top: 10%;
+    top: 6%;
     left: 60%;
 }
 /* Used in 3rd in button */
@@ -167,7 +175,7 @@ a{
 
 .todayDeals{
     width: 100%;
-    height: 900px;
+    height: auto;
     /* border: 1px solid green; */
     margin: auto;
     position: relative;
@@ -179,6 +187,7 @@ a{
 
 .todayDeals img{
     width: 100%;
+    height: auto;
 }
 
 .topLeft{
@@ -224,13 +233,13 @@ a{
 .todayDeals p:nth-child(3){
     position: absolute;
     left:52%;
-    top: 22%;
+    top: 24%;
 }
 
 .todayDeals p:nth-child(4){
     position: absolute;
     left:52%;
-    top: 25%;
+    top: 27%;
 }
 
 /* Common */
@@ -243,7 +252,7 @@ a{
     border-radius: 6px;
     position: absolute;
     left:52%;
-    top: 30%;
+    top: 32%;
     cursor: pointer;
 }
 
@@ -258,7 +267,7 @@ a{
     grid-template-rows: repeat(1, auto);
     gap: 20px;
     margin: auto;
-    padding-left: 24px;
+    padding-left: 38px;
 
 }
 
@@ -312,6 +321,7 @@ a{
 #cart_img{
     width: 12px;
     height: 12px;
+    margin-bottom: 0.5rem;
 }
 
 /* 9. Outlet Event */
@@ -402,7 +412,7 @@ a{
 
 .moreofMonth{
     width: 100%;
-    height: 178px;
+    height: auto;
     /* border: 1px solid red; */
     margin: auto;
     margin-top: 2rem;
@@ -416,7 +426,8 @@ a{
 .moreofMonth div{
     /* border: 1px solid white; */
     width: 20%;
-    height: 138px;
+    height: auto;
+    /* margin-bottom: 6rem; */
 
 }
 
@@ -452,7 +463,7 @@ a{
     color: white;
     background-color: black;
     padding: 10px 30px 10px 30px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
 
@@ -519,7 +530,7 @@ a{
 .four_btn{
     color: white;
     background-color: blue;
-    padding: 10px 20px 10px 20px;
+    padding: 1px 20px 1px 20px;
     border: none;
     border-radius: 6px;
     position: absolute;
