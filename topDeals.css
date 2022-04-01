@@ -10,20 +10,26 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  border: none;
+
 }
 
 #container{
     /* border: 1px solid black; */
     width: 100%;
     height: auto;
+    margin-top: 0.38rem;
     /* margin: 10px; */
     /* padding: 0px 10px 0px 10px; */
     overflow: hidden;
     box-sizing: border-box;
+    border: none;
+
 }
 
 /* 2. Banner */
 .banner{
+    border: none;
     position: relative;
 }
 
