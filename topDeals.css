@@ -4,22 +4,43 @@
     margin: 0;
     padding: 0;
 } */
+.navCls{
+    overflow: hidden;
+  /* background-color: #333; */
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border: none;
 
+}
 
-.container{
-    border: 1px solid black;
+#container{
+    /* border: 1px solid black; */
     width: 100%;
     height: auto;
-    /* margin: 0;
-    padding: 0; */
+    margin-top: 0.38rem;
+    /* margin: 10px; */
+    /* padding: 0px 10px 0px 10px; */
     overflow: hidden;
+    box-sizing: border-box;
+    border: none;
+
 }
 
 /* 2. Banner */
 .banner{
+    border: none;
     position: relative;
 }
 
+/* Just meant to give padding to below banner  */
+
+.belowBanner{
+    /* border: 1px solid black; */
+
+    padding: 0px 10px 0px 10px;
+
+}
 .lapImg{
     width: 100%;
     height: 190px;
@@ -27,7 +48,7 @@
 
 .closeToImg{
     position: absolute;
-    top: 10%;
+    top: 6%;
     left: 60%;
 }
 /* Used in 3rd in button */
@@ -154,7 +175,7 @@ a{
 
 .todayDeals{
     width: 100%;
-    height: 900px;
+    height: auto;
     /* border: 1px solid green; */
     margin: auto;
     position: relative;
@@ -166,6 +187,7 @@ a{
 
 .todayDeals img{
     width: 100%;
+    height: auto;
 }
 
 .topLeft{
@@ -204,20 +226,20 @@ a{
 }
 
 .supScript{
-    top: -0.5em;
+    top: -0.65em;
     font-size: 56px;
 }
 
 .todayDeals p:nth-child(3){
     position: absolute;
     left:52%;
-    top: 20%;
+    top: 24%;
 }
 
 .todayDeals p:nth-child(4){
     position: absolute;
     left:52%;
-    top: 23%;
+    top: 27%;
 }
 
 /* Common */
@@ -230,7 +252,7 @@ a{
     border-radius: 6px;
     position: absolute;
     left:52%;
-    top: 30%;
+    top: 32%;
     cursor: pointer;
 }
 
@@ -245,7 +267,7 @@ a{
     grid-template-rows: repeat(1, auto);
     gap: 20px;
     margin: auto;
-    padding-left: 24px;
+    padding-left: 38px;
 
 }
 
@@ -280,12 +302,12 @@ a{
 
 }
 
-.fi_item_btn{
+#fi_item_btn{
     /* width: 50%; */
     background-color: rgb(252, 252, 14);
     color: black;
     border: none;
-    padding: 10px 20px 10px 20px;
+    padding: 1px 30px 1px 20px;
     border-radius: 6px;
     margin-top: 1rem;
     cursor: pointer;
@@ -299,6 +321,7 @@ a{
 #cart_img{
     width: 12px;
     height: 12px;
+    margin-bottom: 0.5rem;
 }
 
 /* 9. Outlet Event */
@@ -389,7 +412,7 @@ a{
 
 .moreofMonth{
     width: 100%;
-    height: 178px;
+    height: auto;
     /* border: 1px solid red; */
     margin: auto;
     margin-top: 2rem;
@@ -403,7 +426,8 @@ a{
 .moreofMonth div{
     /* border: 1px solid white; */
     width: 20%;
-    height: 138px;
+    height: auto;
+    /* margin-bottom: 6rem; */
 
 }
 
@@ -439,7 +463,7 @@ a{
     color: white;
     background-color: black;
     padding: 10px 30px 10px 30px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
 
@@ -506,7 +530,7 @@ a{
 .four_btn{
     color: white;
     background-color: blue;
-    padding: 10px 20px 10px 20px;
+    padding: 1px 20px 1px 20px;
     border: none;
     border-radius: 6px;
     position: absolute;
