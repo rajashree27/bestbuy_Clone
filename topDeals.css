@@ -149,10 +149,10 @@
 
 /* Common */
 a{
-    padding: 16px;
+    /* padding: 16px; */
     text-decoration: none;
     color: #4784d6;
-    text-align: center;
+    /* text-align: center; */
     /* padding-left: 18px; */
 }
 
