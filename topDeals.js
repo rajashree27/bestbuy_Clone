@@ -9,9 +9,10 @@ function addCartFun()
 
         var cartItemObj = {
             itemCat : document.querySelector('.itemName').innerText,
-            itemPrice : document.querySelector('.fi_item_price').innerText
+            itemPrice : document.querySelector('.fi_item_price').innerText,
+            itemPhoto: document.querySelector('#fi_item_img').src
         }
-        // console.log(cartItemObj);
+        console.log(cartItemObj);
         cartItemArr.push(cartItemObj);
         // console.log(cartItemArr)
         localStorage.setItem('cartItems', JSON.stringify(cartItemArr));
