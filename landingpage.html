@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
+     <!-- Jquery script for including navbar to all pages -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script>
+         $(function(){
+             $('#navbar').load('navbar.html')
+         });
+     </script>
+     <script>
+        $(function(){
+            $('#footer').load('bottompage.html')
+        });
+    </script>
     <style>
         
+        #container-landing{
+            height: auto;
+            width: 100%;
+            border:1px solid black;
+            overflow: hidden;
+        }
+
         #top{
            display: flex;
             width: 100%;
@@ -862,6 +881,8 @@ margin-left: 70px;
 
 
 <body>
+    <div id="navbar"></div>
+    <div id="container-landing">
     <div id="top">
         <div id="top1">
             <div id="outlet">
@@ -1196,6 +1217,113 @@ margin-left: 70px;
 
 
     </div>
+</div>
+</div>
+<!-- <footer class="footer">
+         
+    <div class="container-uni">
+        <div class="top-row">
+            <div class="box">
+               <i class="fa-solid fa-circle-question icon"></i>
+              <a  class="link" href=""> <p>Visit our Support Center</p> </a>
+            </div>
+            <div class="box">
+               <i class="fa-solid fa-box-open icon"></i>
+               <a  class="link" href=""> <p>Check your Order Status</p> </a>
+            </div>
+            <div class="box">
+               <i class="fa-solid fa-truck-fast icon"></i>
+               <a  class="link" href=""><p> Shipping,Delivery & Store Pickup </p></a>
+   
+            </div>
+            <div class="box">
+               <i class="fa-solid fa-arrow-right-arrow-left icon"></i>
+               <a  class="link" href=""> <p>Returns & Exchanges</p> </a>
+            </div>
+            <div class="box">
+               <i class="fa-solid fa-dollar-sign icon"></i>
+               <a class="link" href=""> <p class="p1">Price Match Guarantee</p> </a>
+            </div>
+        </div>
+        <hr style="width:100%;text-align:left;margin-left:0;margin-bottom: 30px;">
+        <div class="row">
+            <div class="footer-col">
+                <h4>order & purchases</h4>
+                <ul>
+                    <li><a href="">Check Order Status</a></li> 
+                    <li><a href="">Shipping, Delivery & Pickup</a></li> 
+                    <li><a href="">Returns & Exchanges</a></li> 
+                    <li><a href="">Price Match Guarantee</a></li> 
+                    <li><a href="">Product Recalls</a></li> 
+                    <li><a href="">Trade-In Program</a></li> 
+                    <li><a href="">Gift Cards</a></li> 
+                </ul>
+                <br>
+                <h4>Payment Options</h4>
+                <ul>
+   
+                    <li><a href="">My Best Buy® Credit Card</a></li> 
+                    <li><a href="">Pay Your Bill at Citibank</a></li> 
+                    <li><a href="">Lease to Own</a></li> 
+                </ul>
+            </div>
+            <div class="footer-col">
+               <h4>Support & Services</h4>
+               <ul>
+                   
+                       <li><a href="">Visit our Support Center</a></li> 
+                       <li><a href="">Shop with an Expert</a></li> 
+                       <li><a href="">Schedule a Service</a></li> 
+                       <li><a href="">Manage an Appointment</a></li> 
+                       <li><a href="">Protection & Support Plans</a></li> 
+                       <li><a href="">Haul Away & Recycling</a></li> 
+                       <li><a href="">Contact Us</a></li> 
+               </ul>
+               <br>
+               <h4>Rewards & Membership</h4>
+               <ul>
+                       <li><a href="">Best Buy Totaltech</a></li> 
+                       <li><a href="">My Best Buy</a></li> 
+                       <li><a href="">View Points & Certificates</a></li> 
+                       <li><a href="">Member Offers</a></li> 
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>Partnerships</h4>
+               <ul>
+                   <li><a href="">Affiliate Program</a></li>
+                   <li><a href="">Advertise with Us</a></li>
+                   <li><a href="">Developers</a></li>
+                   <li><a href="">Best Buy Health</a></li>
+                   <li><a href="">Best Buy Education</a></li>
+                   <li><a href="">Best Buy Business</a></li>
+               </ul>
+               <br>
+               <br>
+               <h4 class="h4">About Best Buy</h4>
+               <ul>
+                   <li><a href="">Corporate Information</a></li>
+                   <li><a href="">Careers</a></li>
+                   <li><a href="">Corporate Responsibility & Sustainability</a></li>
+                   <li><a href="">Discover & Learn</a></li>
+               </ul>
+           </div>
+           <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-youtube"></i></a>
+               </div>
+              
+           </div>
+        </div>
+        <span>How was your experience?<a class="feedback" href=""> Give feedback about our website</a></span>
+        <hr style="width:100%;text-align:left;margin-left:0;margin-top: 30px;">
+    </div>
+    </footer> -->
   
 </body>
 </html>
