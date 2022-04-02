@@ -58,6 +58,7 @@ function usersubmit() {
       /*   console.log("sdfg") */
       registereduser.push(obj);
       localStorage.setItem("registereduser", JSON.stringify(registereduser));
+      alert('Account created successfully');
       window.location.href = "signin.html";
       
     } else {
