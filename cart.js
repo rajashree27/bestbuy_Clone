@@ -1,4 +1,5 @@
-var cartData=JSON.parse(localStorage.getItem("cartItems"));
+var cartData = JSON.parse(localStorage.getItem("cartItems"));
+console.log(cartData);
 
 var total=document.createElement("div");
 total.innerText=total.innerText.substring(1);
