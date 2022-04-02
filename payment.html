@@ -97,10 +97,13 @@ margin-bottom: 30px;
     transition: 0.4s;
 }
 .webAuthn-btn{
-    border: 1px solid blue;
+    border: none;
+    background-color: #0b4ec0;
+    color: white;
     font-size: 20px;
-    color: blue;
     font-weight: 550;
+    border-radius: 5px;
+    padding: 10px 20px;
 }
 .webAuthn-btn:hover{
     background-color: rgb(6, 6, 118);
@@ -146,15 +149,17 @@ color: blue;
     
     <form>
         
-        <input type="name" class="input-box" placeholder="enter your name" id="input-a">
-        <input type="number" class="input-box" placeholder="card number" id="input-b">
+        <input type="name" class="input-box" placeholder="Enter your name" id="input-a">
+        <input type="number" class="input-box" placeholder="Card Number" id="input-b">
       
         <input type="text"  class="input-box" placeholder="CVV" id="input-c">
  
-     <input type="date"  class="input-box" placeholder="Expiry Date" id="input-d">
+     <!-- <input type="date"  class="input-box" placeholder="Expiry Date" id="input-d"> -->
+     <input placeholder="Expiry Date" class="input-box" type="text" onfocus="(this.type='date')" id="input-d">
+
      <input type="number"  class="input-box" placeholder="OTP" id="input-e">
    
-     <input type="submit" class="webAuthn-btn" value="CheckOut">
+     <input type="submit" class="webAuthn-btn" value="Checkout">
 
      <p>By continuing you agree to our <a href="#">Terms and Conditions</a>, our <a href="#">Privacy Policy</a>
         , and the <a href="#">My Best Buy® Program Terms.</a></p>
@@ -173,7 +178,7 @@ function payment()
     event.preventDefault()
     //console.log("hello")
 //    document.querySelector(".webAuthn-btn").alert("Payment Successfull")
-alert("Congrations your order has beed placed")
+alert("Congratulations! Your order has beed placed")
    document.querySelector("#input-a").value=""
    document.querySelector("#input-b").value=""
    document.querySelector("#input-c").value=""
