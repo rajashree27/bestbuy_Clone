@@ -34,7 +34,7 @@ cartData.map(function(el,ind)
     nameItm.style="color:blue;"
 
     var priceItm=document.createElement("p")
-    priceItm.innerText=el.itemPrice;
+    priceItm.innerText="$"+el.itemPrice;
 
 
     box.append(divHead,line,imgItm,nameItm,priceItm);
