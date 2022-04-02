@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+.top-bar{
+    height: 90px;
+    width: 100%;
+   display: flex;
+    background-color: rgb(19, 19, 198);
+    color: white;  
+    justify-content: space-around; 
+
+
+}
+.top-in{
+    height: 70px;
+    width:10%;
+  margin-top: 19px;
+}
+.imge{
+  max-width: 70%;
+  max-height: 80%;
+}
+.returns{
+    color: white;
+    font-size: 17px;
+}
+.b{
+   
+  margin-top: 35px;
+}
+.btn{
+width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+    margin: 10px 0;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ background-color: #0211b8;
+ color: rgb(235, 233, 247);
+ font-size: 20px;
+ margin-top: 20px;
+
+}
+.register-container h1 {
+    font-size: 28px;
+    color: black;
+    margin-top: 2px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+/* empty alert  */
+
+.empty {
+    background-color: #fae8e6;
+    color: rgb(144, 8, 8);
+    margin-top: 2px;
+    border-radius: 8px;
+    padding-left: 2px;
+    padding: 8px;
+    font-size: 19px;
+    display: none;
+    font-weight: lighter;
+}
+
+/* .success {
+    background-color: #00ff15;
+    color: rgb(13, 121, 37);
+    margin-top: 2px;
+    border-radius: 8px;
+    padding-left: 2px;
+    padding: 8px;
+    font-size: 19px;
+    display: none;
+    font-weight: lighter;
+} */
+
+.register-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
+
+.register-container {
+    width: 600px;
+    padding: 32px;
+    background-color: #fff;
+}
+
+.email-input,
+.password-input,
+.name-input,
+.email-confirm,
+.password-confirm,
+.mobile-input,
+.referral-code {
+    display: grid;
+    margin-bottom: 22px;
+}
+
+.email-input label,
+.password-input label,
+.name-input label,
+.email-confirm label,
+.password-confirm label,
+.mobile-input label,
+.referral-code label {
+    margin-bottom: 12px;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.email-input input,
+.password-input input,
+.name-input input,
+.email-confirm input,
+.password-confirm input,
+.mobile-input input,
+.referral-code input {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    outline: none;
+    padding-left: 2px;
+    font-size: 21px;
+}
+
+.forgotted {
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-top: 32px;
+}
+
+/* .forgotted a {
+    color: rgb(219, 13, 13);
+    text-transform: uppercase;
+} */
+
+.forgotted a:hover {
+    text-decoration: none;
+}
+
+.btn-submit {
+    display: grid;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+ .btn-submit input,
+.btn-register input {
+    /* border-radius: 4px; */
+     border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 19px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-transform: uppercase; 
+} 
+
+.btn-submit input:hover,
+.btn-register input:hover {
+    background-color: #04044e;
+    color:white;
+}
+
+.btn-face-google {
+    margin-bottom: 25px;
+}
+
+hr {
+    margin-top: 52px;
+    margin-bottom: 25px;
+}
+
+.label-input-tag {
+    margin-top: 12px;
+    margin-bottom: 52px;
+    font-size: 21px;
+}
+
+.btn-face-google {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-face-google img {
+    width: 22px;
+}
+
+.btn-face-google a {
+    text-decoration: none;
+    padding: 9px 65px 9px 65px;
+    border-radius: 6px;
+    background-color: #0c1cd0;
+    font-size: 25px;
+    color:white;
+    transition: all 0.4s
+}
+
+.face i {
+    color: rgb(227, 229, 240);
+}
+
+.btn-face-google a:hover {
+    background-color: rgb(13, 6, 115);
+    border: 1px solid #fff;
+}
+
+.new-customers {
+    margin-top: 15px;
+}
+
+.text-new-user p {
+    font-size: 27px;
+    font-weight: 100;
+}
+
+
+/* .btn-register {
+ margin-top: 25px;
+ margin-bottom: 25px;
+} */
+
+span {
+    font-size: 14px;
+    color: rgb(138, 131, 131);
+}
+
+ .policy {
+    margin-top: 17px;
+} 
+
+.mobile-input {
+    margin-bottom: 2px;
+}
+
+.referral-code {
+    margin-top: 45px;
+    margin-bottom: 1px;
+    background-color: #f2f2f2;
+    padding: 12px;
+}
+
+.second {
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+.term-condition {
+    font-size: 10px;
+}
+
+.term-condition a {
+    color: blue;
+    font-weight: 500;
+}
+
+.term-condition a:hover {
+    text-decoration: none;
+}
+
+
+/* media screen  */
+
+
+/* 
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens. */
+
+@media screen and (min-width:1025px) {
+    .email-input input,
+    .password-input input,
+    .name-input input,
+    .email-confirm input,
+    .password-confirm input,
+    .mobile-input input,
+    .referral-code input,
+    .btn-submit input,
+    .btn-register input {
+        height: 65px;
+    }
+    .email-input label,
+    .password-input label,
+    .name-input label,
+    .email-confirm label,
+    .password-confirm label,
+    .mobile-input label,
+    .referral-code label {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .register-container {
+        margin-left: 25px;
+        width: 800px;
+    }
+    .new-customers {
+        height: 100%;
+        padding-right: 35px;
+        margin-top: 0;
+    }
+    .btn-face-google a {
+        padding: 12px 90px 12px 90px;
+        font-size: 25px;
+    }
+    .term-condition {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .email-input input,
+    .password-input input,
+    .name-input input,
+    .email-confirm input,
+    .password-confirm input,
+    .mobile-input input,
+    .referral-code input {
+        height: 55px;
+    }
+    .email-input label,
+    .password-input label,
+    .name-input label,
+    .email-confirm label,
+    .password-confirm label,
+    .mobile-input label,
+    .referral-code label {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .register-container {
+        margin-left: 25px;
+        width: 700px;
+    }
+    .new-customers {
+        height: 100%;
+        padding-right: 35px;
+        margin-top: 0;
+    }
+    .btn-face-google a {
+        padding: 12px 90px 12px 90px;
+        font-size: 25px;
+    }
+    .term-condition {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .email-input input,
+    .password-input input,
+    .name-input input,
+    .email-confirm input,
+    .password-confirm input,
+    .mobile-input input,
+    .referral-code input,
+    .btn-submit input,
+    .btn-register input {
+        height: 45px;
+    }
+    .email-input label,
+    .password-input label,
+    .name-input label,
+    .email-confirm label,
+    .password-confirm label,
+    .mobile-input label,
+    .referral-code label {
+        font-size: 17px;
+        font-weight: 100;
+    }
+    .register-container {
+        width: 100%;
+    }
+    .new-customers {
+        height: 100%;
+        padding-right: 35px;
+        margin-top: 0;
+    }
+    .btn-face-google a {
+        padding: 9px 50px 9px 50px;
+        font-size: 13px;
+    }
+    .term-condition {
+        font-size: 12px;
+        font-weight: lighter;
+        margin-top: -25px;
+    }
+    .second,
+    .commitement {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .register-info {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .email-input input,
+    .password-input input,
+    .name-input input,
+    .email-confirm input,
+    .password-confirm input,
+    .mobile-input input,
+    .referral-code input,
+    .btn-submit input,
+    .btn-register input {
+        height: 100%;
+    }
+    .email-input label,
+    .password-input label,
+    .name-input label,
+    .email-confirm label,
+    .password-confirm label,
+    .mobile-input label,
+    .referral-code label {
+        font-size: 15px;
+        font-weight: 100;
+    }
+    .register-container {
+        width: 100%;
+    }
+    .btn-face-google a {
+        padding: 9px 25px 9px 25px;
+        font-size: 17px;
+    }
+    .term-condition {
+        font-size: 12px;
+        font-weight: lighter;
+        margin-top: -25px;
+    }
+    .second,
+    .commitement {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .register-info {
+        padding: 0px;
+    }
+}

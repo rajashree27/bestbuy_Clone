@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palanquin Dark', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+.top-bar{
+    height: 90px;
+    width: 100%;
+   display: flex;
+    background-color: rgb(19, 19, 198);
+    color: white;  
+    justify-content: space-around; 
+
+
+}
+.top-in{
+    height: 70px;
+    width:10%;
+
+  margin-top: 19px;
+}
+.imge{
+  max-width: 70%;
+  max-height: 80%;
+}
+.returns{
+    color: white;
+    font-size: 16px;
+
+}
+.b{
+   
+  margin-top: 35px;
+}
+
+.tag h1 {
+    margin-bottom: 22px;
+    font-size: 30px;
+    padding: 2px;
+}
+
+.login-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 45px;
+}
+
+.empty {
+    background-color: #fae8e6;
+    color: rgb(144, 8, 8);
+    margin-top: 2px;
+    border-radius: 8px;
+    padding-left: 2px;
+    padding: 8px;
+    font-size: 17px;
+    display: none;
+    font-weight: lighter;
+}
+
+.notexist {
+    margin-bottom: 35px;
+}
+
+.face i {
+    color: rgb(38, 60, 255);
+}
+
+.login-container,
+.new-customers {
+    width: 600px;
+    height: auto;
+    padding: 32px;
+    background-color: #fff;
+}
+
+.email-input,
+.password-input,
+.btn-register {
+    display: grid;
+    margin-bottom: 22px;
+}
+
+.email-input label,
+.password-input label {
+    margin-bottom: 12px;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.email-input input,
+.password-input input {
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    outline: none;
+    padding-left: 2px;
+    font-size: 21px;
+}
+
+.forgotted {
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-top: 32px;
+}
+
+.forgotted a {
+    color: rgb(59, 57, 57);
+    text-transform: uppercase;
+}
+
+.forgotted a:hover {
+    text-decoration: none;
+}
+
+.btn-submit {
+    display: grid;
+}
+
+.btn-submit input,
+.btn-register input {
+    /* border-radius: 4px; */
+    border: none;
+    background:blue;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 19px;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.4s;
+    text-transform: uppercase;
+}
+
+.btn-submit input:hover,
+.btn-register input:hover {
+    background-color: #0b0665;
+    color: white;
+}
+
+.para-onther-op-login p {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.btn-face-google {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-face-google a {
+    text-decoration: none;
+    padding: 9px 65px 9px 65px;
+    border: 1px solid rgb(202, 196, 196);
+    font-size: 25px;
+    color:rgb(0, 0, 3);
+    transition: all 0.2s;
+}
+
+
+.btn-face-google a:hover {
+    background-color: rgb(19, 7, 117);
+    color: white;
+    transition: .4s;
+}
+.google i{
+    color:blue;
+}
+.google i:hover{
+    color: white;
+}
+.new-customers {
+    margin-top: 15px;
+}
+
+.text-new-user p {
+    font-size: 27px;
+    font-weight: 100;
+}
+
+.btn-register {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* media screen  */
+
+
+/* 
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens. */
+
+@media screen and (min-width:1025px) {
+    form {
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+    .login-container,
+    .new-customers {
+        margin-left: 25px;
+        width: 500px;
+    }
+    .new-customers {
+        height: 100%;
+        padding-right: 35px;
+        margin-top: 0;
+    }
+    .btn-face-google a {
+        padding: 9px 35px 9px 35px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+    .login-container,
+    .new-customers {
+        margin-left: 25px;
+        width: 600px;
+    }
+    .new-customers {
+        height: 100%;
+        padding-right: 35px;
+        margin-top: 0;
+    }
+    .btn-face-google a {
+        padding: 9px 65px 9px 65px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .login-container,
+    .new-customers {
+        width: 400px;
+    }
+    .new-customers {
+        height: 100%;
+    }
+    .btn-face-google a {
+        padding: 6px 19px 6px 19px;
+        font-size: 17px;
+    }
+    .empty {
+        background-color: #fae8e6;
+        color: rgb(144, 8, 8);
+        margin-top: 2px;
+        border-radius: 8px;
+        padding-left: 2px;
+        padding: 8px;
+        font-size: 17px;
+        display: none;
+        font-weight: lighter;
+    }
+    .login-info {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width:50px) and (max-width:480px) {
+    .login-container,
+    .new-customers {
+        width: 100%;
+    }
+    .new-customers {
+        height: 100%;
+    }
+    .btn-face-google a {
+        padding: 6px 19px 6px 19px;
+        font-size: 17px;
+    }
+    .login-info {
+        padding: 0px;
+        margin: 0;
+    }
+    .btn-register input,
+    .btn-submit input,
+    .face a,
+    .google a,
+    .forgotted a {
+        font-size: 15px
+    }
+}
