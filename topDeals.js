@@ -4,26 +4,26 @@
         prod_url:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451519_sd.jpg;maxHeight=160;maxWidth=160",
         prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
         prod_model:"samsung-82-class-q60t-series-led-4k-uhd-smart",
-        prod_price:"$1599.99",
+        prod_price:"1599.99",
                    
     },
     {
         prod_url:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6480/6480926_sd.jpg;maxHeight=640;maxWidth=550",
         prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Insignia_4C_eps_renditionpicker_319x319-91902.png;maxHeight=70;maxWidth=120",
         prod_model: "Insignia-75-class-f30-series-led-4k-uhd-smart",
-        prod_price:"$689.99",
+        prod_price:"689.99",
     },
     {
         prod_url:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401726_sd.jpg;maxHeight=160;maxWidth=160",
         prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
         prod_model: "Samsung-58-class-q60t-series-led-4k-uhd-smart",
-        prod_price:"$479.99",
+        prod_price:"479.99",
     },
     {
         prod_url:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470258_sd.jpg;maxHeight=640;maxWidth=550",
         prod_logo:"https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/TCL_Red_4_Rev_eps_renditionpicker_319x319-92350.png;maxHeight=70;maxWidth=120",
         prod_model: "TCL-50-class-5-series-qled-4k-uhd-smart",
-        prod_price:"$479.99"
+        prod_price:"479.99"
     }
 ];
 
