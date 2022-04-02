@@ -878,6 +878,15 @@ a{
     font-weight: bolder;
 }
 
-
+#photosection{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: space-around;
+    width: 100%;
+  
+    border: 1px solid red;
+}
 
 
