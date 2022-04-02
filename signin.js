@@ -18,7 +18,7 @@ function loginfunc() {
     collectregistereddata.map(function(el) {
 
         if (el.email == useremail && el.password == userpassword) {
-            alert("login sucessfull press ok to shopping")
+            alert("Login successful! Press ok for shopping")
             window.location.href = "index.html";
             document.querySelector("#email").value="";
            document.querySelector("#password").value="";

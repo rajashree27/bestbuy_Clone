@@ -74,5 +74,6 @@ function removeFromCart(el,ind)
 {
     cartData.splice(ind,1);
     localStorage.setItem("cartItems",JSON.stringify(cartData));
+    alert("Item removed from cart")
     window.location.reload();
 }
