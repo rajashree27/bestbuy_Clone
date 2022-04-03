@@ -61,7 +61,6 @@ As part of our group project in Unit 2 at Masai School, we were given to build t
 
 ![App Screenshot](https://github.com/rajashree27/bestbuy_Clone/blob/master/Screenshots/TopDeals2.png?raw=true)
 
-
 **Cart Page**
 ![App Screenshot](https://github.com/rajashree27/bestbuy_Clone/blob/master/Screenshots/CartPage1.png?raw=true)
 
