@@ -10,6 +10,8 @@ As part of our group project in Unit 2 at Masai School, we were given to build t
 
 **Netlify link of our project**: https://fanciful-unicorn-61bc77.netlify.app/
 
+**Blog link**: https://medium.com/@pallaveeratnakar1714/adde80145794
+
 
 
 
@@ -84,6 +86,7 @@ As part of our group project in Unit 2 at Masai School, we were given to build t
 - Top Deals page made by **Deepak**
 - Cart page made by **Rajashree**
 - Shipping page, payment, last page made by **Pallavee**
+- Blog written by **Pallavee**, contributions by **Akash**,**Deepak**,**Rajashree**
 
 ## Lessons Learned
 
