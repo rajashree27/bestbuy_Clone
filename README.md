@@ -31,14 +31,14 @@ As part of our group project in Unit 2 at Masai School, we were given to build t
 
 ## Pages built
 
-- **Home Page**: containing navbar, products, footer
-- **Create Account**: For creating an account
-- **Sign in**: For signing in to your account
-- **Top Deals**: For checking out the top deals of he website
-- **Cart**: Items added cart will be visible here
-- **Shipping page**: For filling the shipping address
-- **Payments page**: For filling details of payment
-- **Last page**: Wishing buyer "Thank you for shopping with us"
+- **Home Page**: containing navbar, products, footer.
+- **Create Account**: For creating an account.
+- **Sign in**: For signing in to your account.
+- **Top Deals**: For checking out the top deals of the website.
+- **Cart**: Items added to cart will be visible here.
+- **Shipping page**: For filling the shipping address.
+- **Payments page**: For filling details of payment.
+- **Last page**: Wishing buyer "Thank you for shopping with us".
 
 ## Screenshots
 
@@ -93,4 +93,5 @@ As part of our group project in Unit 2 at Masai School, we were given to build t
 - Building a website using HTML, CSS, Javascript(DOM, Local Storage)
 - Added frameworks - Bootstrap
 - Javascript libraries - jQuery
+- How to read and understand colleague's code efficiently.
 
