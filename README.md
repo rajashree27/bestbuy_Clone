@@ -90,7 +90,7 @@ As part of our group project in Unit 2 at Masai School, we were given to build t
 - Team Work and Collaboration
 - Use of GitHub to collaborate
 - Insight into how websites are actually built
-- Bulding a website using HTML, CSS, Javascript(DOM, Local Storage)
+- Building a website using HTML, CSS, Javascript(DOM, Local Storage)
 - Added frameworks - Bootstrap
 - Javascript libraries - jQuery
 
