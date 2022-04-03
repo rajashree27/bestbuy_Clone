@@ -8,7 +8,7 @@ As part of our group project in Unit 2 at Masai School, we were given to build t
 
 **Original website link**: https://www.bestbuy.com/
 
-**Netlify link of our project**: https://lively-croquembouche-fe858a.netlify.app/cart.html
+**Netlify link of our project**: https://fanciful-unicorn-61bc77.netlify.app/
 
 
 
